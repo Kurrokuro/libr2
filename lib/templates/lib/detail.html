@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ book.title }}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="icon" href="data:image/png;base64,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" st>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'lib/style.css' %}" />
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3D4168">
+  <a class="navbar-brand" href="{% url 'lib:index' %}">Library</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'lib:index' %}">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'lib:popular' %}">Popular</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Genres
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+             <ul>
+            {% for genre in genre_list %}
+            <a class="dropdown-item" href="#">{{ genre.name }}</a>
+            {% endfor %}
+      </li>
+             </ul>
+        </div>
+    </ul>
+      <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+      <div class="button">
+     <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#exampleModal">Log in</button>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Log in</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" class="form-check-input" checked>
+      Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</nav>
+
+<div class="conteiner">
+<div class="img">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'img/skate.jpg' %}" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{% static 'img/skate1.jpg' %}" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{% static 'img/skate2.jpg' %}" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+</div>
+
+<div class="hr">
+</div>
+
+<div class="content">
+        <div class="+">
+        {% if book.vote %}
+
+       <p> + {{ book.vote }} </p>
+</div>
+    <div class="-">
+        <p>- {{ book.unlike }} </p>
+        {% else%}
+        {% endif %}
+        </div>
+    <div class="cover">
+
+        <img src="{{MEDIA_URL}} {{book.cover.url}}" width="20%" height="auto">
+
+    </div>
+
+    <div class="voting">
+
+        <form action="{% url 'lib:vote' book.id%}" method="post">
+            {% csrf_token %}
+    <button type="submit" name="add_like" class="btn btn-outline-info" data-toggle="modal"><img src="data:image/png;base64,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"></button>
+   </form>
+
+    </div>
+    <div class="unlikes">
+
+        <form action="{% url 'lib:unlike' book.id%}" method="post">
+            {% csrf_token %}
+            <button type="submit" name="add_like" class="btn btn-outline-info" data-toggle="modal"><img src="data:image/png;base64,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"></button>
+       </form>
+    </div>
+
+     <div class="description">
+         <table class="table">
+             <span align="center"><h4>{{book.title}}</h4></span>
+                <tr>
+                    <th scope="row">Author  </th>
+                    <td>{{ book.author }}</td>
+                </tr>
+                <tr>
+                 <th scope="row">Genre </th>
+                 <td>{{ book.genre }}</td>
+                </tr>
+             <tr>
+                    <th scope="row">Publication date  </th>
+                     <td>{{ book.pub_date }}</td>
+                </tr>
+                <tr>
+                    <th scope="row">Description  </th>
+                     <td>
+                         <div id="exampleAccordion" data-children=".item">
+                     <div class="item">
+    <a data-toggle="collapse" data-parent="#exampleAccordion" href="#exampleAccordion2" role="button" aria-expanded="false" aria-controls="exampleAccordion2">
+      Show
+    </a>
+    <div id="exampleAccordion2" class="collapse" role="tabpanel">
+      <p class="mb-3">
+     {{ book.details }}
+      </p>
+
+    </div>
+  </div>
+</div>
+                     </td>
+                </tr>
+                    <th scope="col"></th>
+                    <td></td>
+         </table>
+
+            <a href="{{MEDIA_URL}} {{ book.book_pdf.url }}"><button type="button" class="btn btn-outline-warning">Read online</button></a>
+
+     </div>
+    </div>
+
+
+<div class="hr">
+</div>
+<div class="footer">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</body>
+</html>

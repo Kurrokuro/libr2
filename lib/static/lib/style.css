@@ -1,0 +1,169 @@
+ h3{
+    text-align: center;
+    color: rgba(255,255,255,1);
+}
+.row li a{
+    color: rgba(0,0,0,1);
+}
+.row li{
+    float: left;
+    list-style: none;
+}
+.row li a:hover{
+    color: #00007A;
+    font-family: serif;
+    font-size: 19px;
+}
+nav{
+    height: 120px;
+
+}
+nav a{
+    margin-left: 15px;
+
+}
+.img{
+    width: 100%;
+    height: auto;
+}
+.hr{
+    width: 100%;
+    height: 100px;
+    background-color: #FFC107;
+}
+.content{
+    width: 100%;
+    height: 2100px;
+    background-image: url();
+    background-repeat: no repeat;
+    background-size: cover;
+    background-color:#333645;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: #3D4168;
+}
+.row{
+    width: 100%;
+    height: 450px;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+.row div{
+    width: 270px;
+    height: 420px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    padding: 10px;
+    float: left;
+    background-color: rgba(255,228,196,0.8);
+    opacity: 0.4;
+    border: 1px solid #333645;
+    border-radius: 8px;
+    padding-left: 35px;
+    padding: 10px;
+}
+.row img{
+    width: 100%;
+    height: auto;
+}
+.row div:hover{
+    background-color: transparent;
+    opacity: 1;
+}
+.top{
+    margin-bottom: 10px;
+    padding-bottom: 25px;
+}
+.wrap .row div{
+    margin-left: 430px;
+
+}
+.shell{
+    width: inherit;
+    height: auto;
+    margin-bottom: 250px;
+    padding: 20px;
+}
+.details .card{
+    background-color: rgb(255,228,196);
+    opacity: 0.3;
+    color: black;
+}
+.dropdown-menu{
+border-radius: 5px;
+
+}
+.cover{
+width: 270px;
+height: 450px;
+border: 1px solid #778899;
+padding: 5px;
+margin-left: 50px;
+margin-top: 10px;
+}
+.cover img{
+width: 100%;
+height:auto;
+}
+
+.cover, .voting, unlikes, .description{
+position: absolute;
+margin: 0;
+}
+
+.description{
+margin-left: 300px;
+margin-top: 35px;
+width: 60%;
+height: 400px;
+}
+table td{
+padding: 15px;
+padding-right: 20px;
+margin: 20px;
+color: white;
+}
+.voting{
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 460px;
+    color: white;
+}
+
+.unlikes{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 135px;
+    margin-top: 460px;
+    color: white;
+}
+.+{
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+    margin-top: 50px;
+    color: white;
+}
+.-{
+    width: auto;
+    height: auto;
+    float: left;
+    margin-left: 135px;
+    margin-top: 60px;
+    color: white;
+}
+
+.current ul{
+    margin-left: 610px;
+    padding-top: 2000px;
+    color: white;
+}
+
+
